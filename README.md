@@ -102,8 +102,9 @@ Université TÉLUQ — Department of Science and Technology
 
 If you use this work, please cite:
 
-**Vitor Magalhaes Silva, Khadidja Henni, Neila Mezghani, and Youcef Abdelliche (2026).  
-A Matrix Factorization and Generative Modeling Framework for Drug–Target Interaction Prediction.  
+**Vitor Magalhaes Silva, Khadidja Henni, and Neila Mezghani,  (2026).  
+Benchmarking Data Augmentation Strategies for Drug–Target Interaction Prediction under Class Imbalance: A Structured Literature Review and
+Implementation Study.
 Department of Information Technology, Université TÉLUQ, Montreal, Canada;  
 École nationale Supérieure d'Informatique, Algiers, Algeria.**
 
@@ -112,7 +113,7 @@ Department of Information Technology, Université TÉLUQ, Montreal, Canada;
 ```bibtex
 @article{silva2026dti,
   title   = {A Matrix Factorization and Generative Modeling Framework for Drug–Target Interaction Prediction},
-  author  = {Silva, Vitor Magalhaes and Henni, Khadidja and Mezghani, Neila and Abdelliche, Youcef},
+  author  = {Silva, Vitor Magalhaes and Henni, Khadidja and Mezghani, Neila},
   year    = {2026},
   journal = {SCITEPRESS / Bioinformatics Track (Under Review)},
 
@@ -131,8 +132,7 @@ Department of Information Technology, Université TÉLUQ, Montreal, Canada;
   email = {
      silva.vitor_magalhaes@univ.teluq.ca;
      khadidja.henni@teluq.ca;
-     neila.mezghani@teluq.ca;
-     hyb_abdelliche@esi.dz
+     neila.mezghani@teluq.ca
   }
 }
 
