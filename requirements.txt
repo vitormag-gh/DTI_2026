@@ -1,0 +1,22 @@
+# Core scientific stack
+numpy
+pandas
+scipy
+scikit-learn
+imbalanced-learn
+
+# Plotting
+matplotlib
+seaborn
+
+# DNN
+tensorflow
+keras
+
+# Chemistry & bioinformatics
+rdkit-pypi
+pubchempy
+
+# Utilities
+tqdm
+requests

@@ -1,0 +1,4 @@
+Index,Drug_ID,Target_ID,Probability_Class_1
+174,D00438,hsa779,0.89483106
+9,D03365,hsa1137,0.8110331
+39,D00547,hsa2570,0.7236461
