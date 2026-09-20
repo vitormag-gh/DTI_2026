@@ -102,37 +102,26 @@ Université TÉLUQ — Department of Science and Technology
 
 If you use this work, please cite:
 
-**Vitor Magalhaes Silva, Khadidja Henni, and Neila Mezghani,  (2026).  
-Benchmarking Data Augmentation Strategies for Drug–Target Interaction Prediction under Class Imbalance: A Structured Literature Review and
-Implementation Study.
-Department of Information Technology, Université TÉLUQ, Montreal, Canada;  
-École nationale Supérieure d'Informatique, Algiers, Algeria.**
+**Vitor Magalhaes Silva, Khadidja Henni, and Neila Mezghani (2026).  
+*Benchmarking Data Augmentation Strategies for Drug–Target Interaction Prediction under Class Imbalance: A Controlled Comparative Study.*  
+Department of Information Technology, TELUQ University, Montreal, Quebec, Canada;  
+Imaging and Orthopedics Research Laboratory (LIO), CHUM Research Center, Montreal, Quebec, Canada.**
 
-````markdown
 ### BibTeX
-```bibtex
-@article{silva2026dti,
-  title   = {A Matrix Factorization and Generative Modeling Framework for Drug–Target Interaction Prediction},
-  author  = {Silva, Vitor Magalhaes and Henni, Khadidja and Mezghani, Neila},
-  year    = {2026},
-  journal = {SCITEPRESS / Bioinformatics Track (Under Review)},
 
+bibtex
+@unpublished{silva2026dti,
+  title = {Benchmarking Data Augmentation Strategies for Drug--Target Interaction Prediction under Class Imbalance: A Controlled Comparative Study},
+  author = {Silva, Vitor Magalhaes and Henni, Khadidja and Mezghani, Neila},
+  year = {2026},
+  note = {Manuscript submitted to BMC Bioinformatics},
   affiliation = {
-    {\sup{1}} Institut d'intelligence artificielle appliquée (Institut I2A), TELUQ University, Montreal, Canada;
-    {\sup{2}} Imaging and Orthopaedics Research Laboratory (LIO), CHUM Research Center, Montreal, Canada;
-    {\sup{3}} École Nationale Supérieure d'Informatique, Alger, Algeria
+    Department of Information Technology, TELUQ University, Montreal, Quebec, Canada;
+    Imaging and Orthopedics Research Laboratory (LIO), CHUM Research Center, Montreal, Quebec, Canada
   },
-
   orcid = {
-     Silva = {0009-0003-5233-9161};
-     Henni = {0000-0002-3019-3187};
-     Mezghani = {0000-0002-5935-4570}
-  },
-
-  email = {
-     silva.vitor_magalhaes@univ.teluq.ca;
-     khadidja.henni@teluq.ca;
-     neila.mezghani@teluq.ca
+    Silva: 0009-0003-5233-9161;
+    Henni: 0000-0002-3019-3187;
+    Mezghani: 0000-0002-5935-4570
   }
 }
-
