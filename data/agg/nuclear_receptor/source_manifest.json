@@ -1,0 +1,41 @@
+{
+  "family": "nuclear_receptor",
+  "display_name": "Nuclear Receptor",
+  "legacy_notation": {
+    "Y": "drug-target interaction matrix",
+    "St": "compound similarity",
+    "Sd": "protein similarity"
+  },
+  "source_files": {
+    "Y": {
+      "filename": "nr_admat_dgc.txt",
+      "sha256": "74256ec88b415dbdb93735e93797955e82587f3154988e99787a4e604111963b"
+    },
+    "St": {
+      "filename": "nr_simmat_dc.txt",
+      "sha256": "f80e101f284934b85c5dc7601ecaca2cc86c62a946141b2587f3ac8482c9a7c1"
+    },
+    "Sd": {
+      "filename": "nr_simmat_dg.txt",
+      "sha256": "5bf651f310b037320fe5d8aa61dfa15e0d8af4b0fd50c3969201085e64b631e1"
+    }
+  },
+  "shapes": {
+    "Y": [
+      26,
+      54
+    ],
+    "St_compound": [
+      54,
+      54
+    ],
+    "Sd_protein": [
+      26,
+      26
+    ],
+    "pairs": [
+      1404,
+      9
+    ]
+  }
+}

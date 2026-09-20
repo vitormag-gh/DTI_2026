@@ -1,0 +1,45 @@
+{
+  "step": "06 - fixed inner 80/20 train-validation splits",
+  "outer_split_seed": 13571113,
+  "inner_split_seed": 555487,
+  "n_outer_folds": 5,
+  "inner_train_size": 0.8,
+  "inner_validation_size": 0.2,
+  "stratify_on": "y",
+  "families": [
+    "enzyme",
+    "gpcr",
+    "ion_channel",
+    "nuclear_receptor"
+  ],
+  "assignment_files": {
+    "enzyme": [
+      "data\\split\\enzyme\\outer_fold_1_roles.csv",
+      "data\\split\\enzyme\\outer_fold_2_roles.csv",
+      "data\\split\\enzyme\\outer_fold_3_roles.csv",
+      "data\\split\\enzyme\\outer_fold_4_roles.csv",
+      "data\\split\\enzyme\\outer_fold_5_roles.csv"
+    ],
+    "gpcr": [
+      "data\\split\\gpcr\\outer_fold_1_roles.csv",
+      "data\\split\\gpcr\\outer_fold_2_roles.csv",
+      "data\\split\\gpcr\\outer_fold_3_roles.csv",
+      "data\\split\\gpcr\\outer_fold_4_roles.csv",
+      "data\\split\\gpcr\\outer_fold_5_roles.csv"
+    ],
+    "ion_channel": [
+      "data\\split\\ion_channel\\outer_fold_1_roles.csv",
+      "data\\split\\ion_channel\\outer_fold_2_roles.csv",
+      "data\\split\\ion_channel\\outer_fold_3_roles.csv",
+      "data\\split\\ion_channel\\outer_fold_4_roles.csv",
+      "data\\split\\ion_channel\\outer_fold_5_roles.csv"
+    ],
+    "nuclear_receptor": [
+      "data\\split\\nuclear_receptor\\outer_fold_1_roles.csv",
+      "data\\split\\nuclear_receptor\\outer_fold_2_roles.csv",
+      "data\\split\\nuclear_receptor\\outer_fold_3_roles.csv",
+      "data\\split\\nuclear_receptor\\outer_fold_4_roles.csv",
+      "data\\split\\nuclear_receptor\\outer_fold_5_roles.csv"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "family": "enzyme",
+  "display_name": "Enzyme",
+  "legacy_notation": {
+    "Y": "drug-target interaction matrix",
+    "St": "compound similarity",
+    "Sd": "protein similarity"
+  },
+  "source_files": {
+    "Y": {
+      "filename": "e_admat_dgc.txt",
+      "sha256": "bf73f8f0c1a71f9fe92d1e0d8a1065a1122b383532cd47fc73df1cb0d9ba6c10"
+    },
+    "St": {
+      "filename": "e_simmat_dc.txt",
+      "sha256": "28105b9570c91b4eac688eaf92db2e4aacb7117bc8665cab527fc5d45cd83606"
+    },
+    "Sd": {
+      "filename": "e_simmat_dg.txt",
+      "sha256": "14816c2bba2193d62f52ab53bd51fe9a490b28e98cf33df392a5da2bf24e5607"
+    }
+  },
+  "shapes": {
+    "Y": [
+      664,
+      445
+    ],
+    "St_compound": [
+      445,
+      445
+    ],
+    "Sd_protein": [
+      664,
+      664
+    ],
+    "pairs": [
+      295480,
+      9
+    ]
+  }
+}

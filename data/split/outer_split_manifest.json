@@ -1,0 +1,19 @@
+{
+  "step": "05 - fixed stratified 5-fold outer splits",
+  "n_outer_folds": 5,
+  "outer_split_seed": 13571113,
+  "splitter": "sklearn.model_selection.StratifiedKFold",
+  "shuffle": true,
+  "families": [
+    "enzyme",
+    "gpcr",
+    "ion_channel",
+    "nuclear_receptor"
+  ],
+  "assignment_files": {
+    "enzyme": "data\\split\\enzyme\\outer_folds.csv",
+    "gpcr": "data\\split\\gpcr\\outer_folds.csv",
+    "ion_channel": "data\\split\\ion_channel\\outer_folds.csv",
+    "nuclear_receptor": "data\\split\\nuclear_receptor\\outer_folds.csv"
+  }
+}

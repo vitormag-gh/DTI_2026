@@ -1,0 +1,41 @@
+{
+  "family": "gpcr",
+  "display_name": "GPCR",
+  "legacy_notation": {
+    "Y": "drug-target interaction matrix",
+    "St": "compound similarity",
+    "Sd": "protein similarity"
+  },
+  "source_files": {
+    "Y": {
+      "filename": "gpcr_admat_dgc.txt",
+      "sha256": "49b2a8a0139dac3116399618bfefc9d1afcc276ce31b7de4e241d1b6e62ef8ab"
+    },
+    "St": {
+      "filename": "gpcr_simmat_dc.txt",
+      "sha256": "ba9c1cf096f0f688d1341fec22ebdecb63162005394d3b5ec3e2f2ef3fd40df9"
+    },
+    "Sd": {
+      "filename": "gpcr_simmat_dg.txt",
+      "sha256": "c58c4311d2086a6914208ed0914598528ce54ade88eb52b0f737eedcaf5001e4"
+    }
+  },
+  "shapes": {
+    "Y": [
+      95,
+      223
+    ],
+    "St_compound": [
+      223,
+      223
+    ],
+    "Sd_protein": [
+      95,
+      95
+    ],
+    "pairs": [
+      21185,
+      9
+    ]
+  }
+}

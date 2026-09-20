@@ -1,0 +1,51 @@
+{
+  "implementation_version": "mf_v2_masked_laplacian",
+  "steps": [
+    "07 - fit matrix factorization with validation/test labels masked",
+    "08 - audit representation-learning leakage"
+  ],
+  "families": [
+    "enzyme",
+    "gpcr",
+    "ion_channel",
+    "nuclear_receptor"
+  ],
+  "outer_folds": 5,
+  "methods": [
+    "MSCMF",
+    "NNMF",
+    "LMF"
+  ],
+  "parameters": {
+    "MSCMF": {
+      "K": 50,
+      "gamma": 0.1,
+      "lambda_protein": 0.1,
+      "lambda_compound": 0.01,
+      "tolerance": 0.001,
+      "max_iterations": 1000,
+      "initialization_seed": null
+    },
+    "NNMF": {
+      "K": 50,
+      "random_state": 0,
+      "max_iterations": 200,
+      "tolerance": 0.0001
+    },
+    "LMF": {
+      "K": 50,
+      "learning_rate": 0.01,
+      "max_iterations": 100,
+      "l2_regularization": false,
+      "initialization_seed": null
+    }
+  },
+  "masking_rule": {
+    "train": 1,
+    "validation": 0,
+    "test": 0,
+    "heldout_labels_replaced_by_zero": false
+  },
+  "output_structure": "data/split/<family>/latent/outer_fold_<k>/<method>/",
+  "stats_workbook": "Stats\\mf_7_8_statistics.xlsx"
+}

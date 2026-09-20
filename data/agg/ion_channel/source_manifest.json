@@ -1,0 +1,41 @@
+{
+  "family": "ion_channel",
+  "display_name": "Ion Channel",
+  "legacy_notation": {
+    "Y": "drug-target interaction matrix",
+    "St": "compound similarity",
+    "Sd": "protein similarity"
+  },
+  "source_files": {
+    "Y": {
+      "filename": "ic_admat_dgc.txt",
+      "sha256": "ac9df3498bc12af5174503e5f1e09ce26a6d78d753861a5eca55425f9f9ae2c9"
+    },
+    "St": {
+      "filename": "ic_simmat_dc.txt",
+      "sha256": "c1078ca88528d75ddb43d4ed2559391d7d8f5375ec572e6e9112e519d9cdbbf9"
+    },
+    "Sd": {
+      "filename": "ic_simmat_dg.txt",
+      "sha256": "e15626145623124ad42a45412c544d5fed5e079003727df784d29ed3ca72efef"
+    }
+  },
+  "shapes": {
+    "Y": [
+      204,
+      210
+    ],
+    "St_compound": [
+      210,
+      210
+    ],
+    "Sd_protein": [
+      204,
+      204
+    ],
+    "pairs": [
+      42840,
+      9
+    ]
+  }
+}

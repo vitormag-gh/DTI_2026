@@ -1,0 +1,13 @@
+Dipole Moment (μ): This is a measure of the separation of positive and negative electrical charges within a molecule. It's a vector quantity, indicating both the magnitude and the direction of the molecule's polarity.
+
+Polarizability (α): This refers to the ability of a molecule to become polarized in the presence of an external electric field. It is a measure of how easily the electron cloud around a molecule can be distorted.
+
+HOMO-LUMO Gap: This is the energy difference between the highest occupied molecular orbital (HOMO) and the lowest unoccupied molecular orbital (LUMO). It's an important indicator of a molecule's chemical stability and its electronic properties.
+
+ 
+2
+R 
+2
+ : In the context of molecular properties, this usually refers to the square of the electron density's second moment. It gives an idea of the electron distribution within the molecule.
+
+Zero-Point Vibrational Energy (ZPVE): This is the lowest possible energy that a quantum mechanical physical system may have. Unlike in classical mechanics, quantum systems constantly fluctuate in their lowest energy state due to the Heisenberg uncertainty principle.

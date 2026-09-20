@@ -1,0 +1,8 @@
+Notebook: 5 - Fixed Stratified 5-Fold Outer Splits - All Families
+OUTER_SPLIT_SEED = 13571113
+
+Notebook: 6 - Fixed Inner 80-20 Train-Validation Splits - All Families
+INNER_SPLIT_SEED = 555487
+
+
+

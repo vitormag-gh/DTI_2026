@@ -1,0 +1,286 @@
+{
+  "implementation_version": "dnn_oof_v1_fixed_5fold_10run_73configs",
+  "steps": [
+    "11 - fixed DNN training",
+    "12 - untouched outer-test prediction",
+    "13 - five-fold OOF assembly",
+    "14 - run-level OOF metrics",
+    "15 - mean, sample SD, and 95% CI over 10 runs",
+    "16 - complete-results validation",
+    "17 - family result tables"
+  ],
+  "families": [
+    "enzyme",
+    "gpcr",
+    "ion_channel",
+    "nuclear_receptor"
+  ],
+  "outer_folds": 5,
+  "runs_per_configuration": 10,
+  "configurations_per_family": 73,
+  "run_level_rows_per_family": 730,
+  "total_run_level_rows": 2920,
+  "total_dnn_fits": 14600,
+  "baseline": {
+    "method": "MSCMF (No DA)",
+    "backbone": "MSCMF",
+    "ratio": "natural inner-training prevalence",
+    "runs": 10
+  },
+  "augmentation_configurations": [
+    {
+      "backbone": "MSCMF",
+      "method": "WGANGP",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "VAE",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "NNMF",
+      "method": "WGANGP",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "LMF",
+      "method": "WGANGP",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "NNMF",
+      "method": "VAE",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "LMF",
+      "method": "VAE",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "LatentDiffusion",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "ADASYN",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "LatentSampling",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "NoiseInjection",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "RandomOver",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "SMOTE",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "BasicSMOTE",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "KMeansSMOTE",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "SMOTETomekLinks",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "CNNTomekLinks",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "RandomUnder",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "TomekLinks",
+      "ratios": [
+        "50/50",
+        "80/20",
+        "85/15",
+        "90/10"
+      ]
+    }
+  ],
+  "dnn": {
+    "input_dimension": 100,
+    "hidden_layers": [
+      512,
+      256,
+      128
+    ],
+    "hidden_activation": "ReLU",
+    "dropout": 0.1,
+    "dropout_position": "after first hidden layer",
+    "output_units": 2,
+    "output_activation": "Sigmoid",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "epsilon": 1e-07,
+    "loss": "binary_crossentropy",
+    "epochs": 12,
+    "batch_sizes": {
+      "enzyme": 256,
+      "gpcr": 128,
+      "ion_channel": 128,
+      "nuclear_receptor": 32
+    }
+  },
+  "scaler": {
+    "type": "StandardScaler",
+    "fit_scope": "real inner-training observations only, per family/fold/backbone",
+    "validation_used_for_fit": false,
+    "outer_test_used_for_fit": false
+  },
+  "seed_policy": {
+    "data_partitions": "fixed and reused from Steps 05-06",
+    "dnn_run_seed": "not fixed and not saved",
+    "seed_functions_called_by_this_notebook": false,
+    "interpretation": "10 stochastic DNN training runs under fixed data partitions"
+  },
+  "metrics": [
+    "Accuracy",
+    "Precision",
+    "Recall",
+    "F1",
+    "ROC-AUC",
+    "PR-AUC"
+  ],
+  "metric_scope": "one pooled full-family OOF prediction vector per run",
+  "confidence_interval": {
+    "n": 10,
+    "sample_sd_ddof": 1,
+    "distribution": "Student t",
+    "df": 9,
+    "t_critical_0.975": 2.262
+  },
+  "results_workbook": "Stats\\DNN_OOF_Final_Results.xlsx",
+  "results_sheets": [
+    "Enzyme Runs",
+    "Enzyme MeanSD",
+    "Enzyme CI",
+    "GPCR Runs",
+    "GPCR MeanSD",
+    "GPCR CI",
+    "IonChannel Runs",
+    "IonChannel MeanSD",
+    "IonChannel CI",
+    "NuclearRec Runs",
+    "NuclearRec MeanSD",
+    "NuclearRec CI"
+  ],
+  "run_metrics_checkpoint": "Stats\\dnn_11_17_run_metrics_checkpoint_MERGED.csv",
+  "fold_audit_checkpoint": "Stats\\dnn_11_17_fold_audit_checkpoint_MERGED.csv",
+  "validation_workbook": "Stats\\DNN_11_17_Validation.xlsx",
+  "step_09_10_manifest_sha256": "110b4f5b38f09d71232ea1f1926cff6867a65d77b8ca7bca3de76a6392c6d09a",
+  "created_at": "2026-09-10T18:34:06"
+}

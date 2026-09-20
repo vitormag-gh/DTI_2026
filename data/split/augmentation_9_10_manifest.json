@@ -1,0 +1,112 @@
+{
+  "implementation_version": "augmentation_v2_train_only_14_methods_with_diffusion",
+  "steps": [
+    "09 - augment inner-training observations only",
+    "10 - audit augmentation"
+  ],
+  "families": [
+    "enzyme",
+    "gpcr",
+    "ion_channel",
+    "nuclear_receptor"
+  ],
+  "outer_folds": 5,
+  "unique_augmentation_algorithms": 14,
+  "method_backbone_configurations": [
+    {
+      "backbone": "MSCMF",
+      "method": "RandomOver"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "RandomUnder"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "TomekLinks"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "CNNTomekLinks"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "SMOTE"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "SMOTETomekLinks"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "BasicSMOTE"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "ADASYN"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "KMeansSMOTE"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "LatentSampling"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "NoiseInjection"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "VAE"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "WGANGP"
+    },
+    {
+      "backbone": "NNMF",
+      "method": "VAE"
+    },
+    {
+      "backbone": "NNMF",
+      "method": "WGANGP"
+    },
+    {
+      "backbone": "LMF",
+      "method": "VAE"
+    },
+    {
+      "backbone": "LMF",
+      "method": "WGANGP"
+    },
+    {
+      "backbone": "MSCMF",
+      "method": "LatentDiffusion"
+    }
+  ],
+  "target_ratios": {
+    "50_50": {
+      "non_interaction_units": 1,
+      "interaction_units": 1
+    },
+    "80_20": {
+      "non_interaction_units": 4,
+      "interaction_units": 1
+    },
+    "85_15": {
+      "non_interaction_units": 17,
+      "interaction_units": 3
+    },
+    "90_10": {
+      "non_interaction_units": 9,
+      "interaction_units": 1
+    }
+  },
+  "leakage_rule": "augmentation receives role=train observations only",
+  "validation_used": false,
+  "outer_test_used": false,
+  "storage": "compact real-index + synthetic-pool + ratio-plan format",
+  "stats_workbook": "Stats\\augmentation_9_10_statistics.xlsx"
+}
